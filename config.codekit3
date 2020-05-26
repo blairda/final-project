@@ -51,7 +51,7 @@
 		},
 	"/design/assets/maf10.jpg": {
 		"ft": 16384,
-		"iS": 46302,
+		"iS": 91089,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/design/assets/maf10.jpg",
@@ -62,7 +62,7 @@
 		},
 	"/design/assets/maf11.jpg": {
 		"ft": 16384,
-		"iS": 40351,
+		"iS": 78982,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/design/assets/maf11.jpg",
@@ -73,24 +73,24 @@
 		},
 	"/design/assets/maf12.jpg": {
 		"ft": 16384,
-		"iS": 44640,
+		"iS": 76058,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/design/assets/maf12.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/design/assets/maf13.jpg": {
 		"ft": 16384,
-		"iS": 249968,
+		"iS": 192899,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/design/assets/maf13.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/design/assets/maf2.jpg": {
@@ -121,8 +121,8 @@
 		"oA": 0,
 		"oAP": "/design/assets/maf4.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},

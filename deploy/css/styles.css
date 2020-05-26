@@ -397,13 +397,16 @@ p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: #18174B;
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+  line-height: 1.5rem; }
   @media (min-width: 768px) {
     p {
-      font-size: 1rem; } }
+      font-size: 1rem;
+      line-height: 1.25rem; } }
   @media (min-width: 992px) {
     p {
-      font-size: 1.125rem; } }
+      font-size: 1.125rem;
+      line-height: 1.1875rem; } }
 /* =============
     Buttons
 ============= */
@@ -440,17 +443,16 @@ h2 {
 /* =============
     Section 1
 ============= */
-h3 {
+#section-1 h3 {
   background-color: #E2DEF6; }
 
 /* =============
     Section 2
 ============= */
-section {
+#section-2 {
   background-color: #E1FFFC; }
-
-span {
-  font-weight: 600; }
+  #section-2 span {
+    font-weight: 600; }
 
 /* =============
     Section 3
@@ -458,12 +460,17 @@ span {
 /* =============
     Section 4
 ============= */
-section {
+#section-4 {
   background-color: #fff; }
 
 /* =============
     Section 5
 ============= */
+#section-5 {
+  background-color: #E1FFFC; }
+  #section-5 span {
+    font-weight: 600; }
+
 /* =============
     Section 6
 ============= */

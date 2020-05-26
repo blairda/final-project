@@ -94,10 +94,13 @@ p{
     font-weight: 500;
     color: $violet;
     font-size: rem-calc(14);
+    line-height: rem-calc(24);
     @include md{
         font-size: rem-calc(16);
+        line-height: rem-calc(20);
     }
     @include lg{
         font-size: rem-calc(18);
+        line-height: rem-calc(19);
     }
 }
