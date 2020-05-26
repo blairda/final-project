@@ -2,6 +2,16 @@
     Section 2
 ============= */
 #section-2{
+    margin-top: 40px;
+
+    @include md {
+        margin-top: 60px;
+    }
+
+    @include lg {
+        margin-top: 80px;
+    }
+    
     background-color: $turquoise;
     span{
     font-weight: 600;

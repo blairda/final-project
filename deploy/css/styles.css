@@ -464,29 +464,125 @@ footer {
     Section 2
 ============= */
 #section-2 {
+  margin-top: 40px;
   background-color: #E1FFFC; }
+  @media (min-width: 768px) {
+    #section-2 {
+      margin-top: 60px; } }
+  @media (min-width: 992px) {
+    #section-2 {
+      margin-top: 80px; } }
   #section-2 span {
     font-weight: 600; }
 
 /* =============
     Section 3
 ============= */
+#section-3 {
+  margin-top: 40px; }
+  @media (min-width: 768px) {
+    #section-3 {
+      margin-top: 60px; } }
+  @media (min-width: 992px) {
+    #section-3 {
+      margin-top: 80px; } }
+  #section-3 #section-3-container {
+    display: grid;
+    grid-template-areas: ". section-3 .";
+    grid-template-columns: 40px auto 40px; }
+    @media (min-width: 768px) {
+      #section-3 #section-3-container {
+        grid-template-columns: 0px auto 0px; } }
+  #section-3 #section-3-content {
+    grid-area: section-3;
+    grid-template-rows: repeat(3, 1fr); }
+    #section-3 #section-3-content img {
+      width: 100%; }
+    @media (min-width: 768px) {
+      #section-3 #section-3-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 40px 32px;
+        grid-template-areas: "card1 card1 card2 card2" ". card3 card3 .";
+        margin: 0 70px 0 70px; } }
+    @media (min-width: 992px) {
+      #section-3 #section-3-content {
+        display: grid;
+        grid-template-areas: "card1 card2 card3";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: 0 20px;
+        margin: 0 40px 0 40px; } }
+  #section-3 #section-3-card1 {
+    grid-area: card1;
+    background-color: #E2DEF6;
+    margin-bottom: 20px; }
+    @media (min-width: 768px) {
+      #section-3 #section-3-card1 {
+        margin-bottom: 0; } }
+    #section-3 #section-3-card1 #card1-text {
+      padding: 20px; }
+      #section-3 #section-3-card1 #card1-text p {
+        padding-top: 20px;
+        text-align: center; }
+  #section-3 #section-3-card2 {
+    grid-area: card2;
+    background-color: #E2DEF6;
+    margin-bottom: 20px; }
+    @media (min-width: 768px) {
+      #section-3 #section-3-card2 {
+        margin-bottom: 0; } }
+    #section-3 #section-3-card2 #card2-text {
+      padding: 20px; }
+      #section-3 #section-3-card2 #card2-text p {
+        padding-top: 20px;
+        text-align: center; }
+  #section-3 #section-3-card3 {
+    grid-area: card3;
+    background-color: #E2DEF6; }
+    #section-3 #section-3-card3 #card3-text {
+      padding: 20px; }
+      #section-3 #section-3-card3 #card3-text p {
+        padding-top: 20px;
+        text-align: center; }
+
 /* =============
     Section 4
 ============= */
 #section-4 {
-  background-color: #fff; }
-
+  background-color: #fff;
+  margin-top: 40px; }
+  @media (min-width: 768px) {
+    #section-4 {
+      margin-top: 60px; } }
+  @media (min-width: 992px) {
+    #section-4 {
+      margin-top: 80px; } }
 /* =============
     Section 5
 ============= */
 #section-5 {
-  background-color: #E1FFFC; }
+  background-color: #E1FFFC;
+  margin-top: 40px; }
   #section-5 p span {
     font-weight: 600; }
-
+  @media (min-width: 768px) {
+    #section-5 {
+      margin-top: 60px; } }
+  @media (min-width: 992px) {
+    #section-5 {
+      margin-top: 80px; } }
 /* =============
     Section 6
 ============= */
-#section-6 #section-6-container {
-  background-color: #E2DEF6; }
+#section-6 {
+  margin-top: 40px; }
+  @media (min-width: 768px) {
+    #section-6 {
+      margin-top: 60px; } }
+  @media (min-width: 992px) {
+    #section-6 {
+      margin-top: 80px; } }
+  #section-6 #section-6-container {
+    background-color: #E2DEF6; }

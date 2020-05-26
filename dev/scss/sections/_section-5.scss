@@ -9,4 +9,14 @@
             font-weight: 600;
         }
     }
+
+    margin-top: 40px;
+
+    @include md {
+        margin-top: 60px;
+    }
+
+    @include lg {
+        margin-top: 80px;
+    }
 }

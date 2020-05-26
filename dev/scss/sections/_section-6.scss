@@ -2,7 +2,16 @@
     Section 6
 ============= */
 #section-6{
-    
+    margin-top: 40px;
+
+    @include md {
+        margin-top: 60px;
+    }
+
+    @include lg {
+        margin-top: 80px;
+    }
+
     #section-6-container{
         background-color: $lilac;
     }
