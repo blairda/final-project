@@ -73,12 +73,11 @@ h5{
     text-align: justify;
     @include md{
         font-size: rem-calc(20);
-        color: $seafoam;
+        color: $turquoise;
         text-align: right;
     }
     @include lg{
         font-size: rem-calc(24);
-        color: $seafoam;
     }
 }
 
@@ -86,7 +85,14 @@ h6{
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
     color: $turquoise;
-    font-size: rem-calc(12);
+    font-size: rem-calc(11);
+    line-height: rem-calc(18);
+    @include md{
+        font-size: rem-calc(12);
+    }
+    @include lg{
+        line-height: rem-calc(20);
+    }
 }
 
 p{
@@ -94,13 +100,13 @@ p{
     font-weight: 500;
     color: $violet;
     font-size: rem-calc(14);
-    line-height: rem-calc(24);
+    line-height: rem-calc(19);
     @include md{
         font-size: rem-calc(16);
         line-height: rem-calc(20);
     }
     @include lg{
         font-size: rem-calc(18);
-        line-height: rem-calc(19);
+        line-height: rem-calc(24);
     }
 }

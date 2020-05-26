@@ -327,7 +327,7 @@ h1, h2, h2, h3, h4, h5, h6, p {
 h1 {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
-  color: #9AEFE7;
+  color: #E1FFFC;
   font-size: 1.5rem;
   text-align: center; }
   @media (min-width: 768px) {
@@ -339,7 +339,7 @@ h1 {
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  color: #9AEFE7;
+  color: #E1FFFC;
   font-size: 0.6875rem;
   text-align: center; }
   @media (min-width: 768px) {
@@ -385,20 +385,25 @@ h5 {
       text-align: right; } }
   @media (min-width: 992px) {
     h5 {
-      font-size: 1.5rem;
-      color: #E1FFFC; } }
+      font-size: 1.5rem; } }
 h6 {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
-  color: #9AEFE7;
-  font-size: 0.75rem; }
-
+  color: #E1FFFC;
+  font-size: 0.6875rem;
+  line-height: 1.125rem; }
+  @media (min-width: 768px) {
+    h6 {
+      font-size: 0.75rem; } }
+  @media (min-width: 992px) {
+    h6 {
+      line-height: 1.25rem; } }
 p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   color: #18174B;
   font-size: 0.875rem;
-  line-height: 1.5rem; }
+  line-height: 1.1875rem; }
   @media (min-width: 768px) {
     p {
       font-size: 1rem;
@@ -406,7 +411,7 @@ p {
   @media (min-width: 992px) {
     p {
       font-size: 1.125rem;
-      line-height: 1.1875rem; } }
+      line-height: 1.5rem; } }
 /* =============
     Buttons
 ============= */
@@ -440,6 +445,15 @@ h2 {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #18174B; }
+  footer p {
+    color: #E1FFFC;
+    line-height: 1rem;
+    font-size: 0.6875rem; }
+    @media (min-width: 768px) {
+      footer p {
+        font-size: 0.75rem; } }
 /* =============
     Section 1
 ============= */
@@ -468,9 +482,11 @@ h2 {
 ============= */
 #section-5 {
   background-color: #E1FFFC; }
-  #section-5 span {
+  #section-5 p span {
     font-weight: 600; }
 
 /* =============
     Section 6
 ============= */
+#section-6 #section-6-container {
+  background-color: #E2DEF6; }
