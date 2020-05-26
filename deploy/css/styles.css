@@ -320,6 +320,90 @@ template {
 /* =============
     Typography
 ============= */
+h1, h2, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  color: #9AEFE7;
+  font-size: 1.5rem;
+  text-align: center; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 2.5rem; } }
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 3rem; } }
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #9AEFE7;
+  font-size: 0.6875rem;
+  text-align: center; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 1rem; } }
+  @media (min-width: 992px) {
+    h2 {
+      font-size: 1.25rem; } }
+h3 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  color: #18174B;
+  font-size: 1.125rem; }
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 1.25rem; } }
+  @media (min-width: 992px) {
+    h3 {
+      font-size: 1.5rem; } }
+h4 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  color: #18174B;
+  font-size: 1rem;
+  text-align: center; }
+  @media (min-width: 768px) {
+    h4 {
+      font-size: 1.125rem; } }
+  @media (min-width: 992px) {
+    h4 {
+      font-size: 1.25rem; } }
+h5 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 1, 500;
+  color: #18174B;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  text-align: justify; }
+  @media (min-width: 768px) {
+    h5 {
+      font-size: 1.25rem;
+      color: #E1FFFC;
+      text-align: right; } }
+  @media (min-width: 992px) {
+    h5 {
+      font-size: 1.5rem;
+      color: #E1FFFC; } }
+h6 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  color: #9AEFE7;
+  font-size: 0.75rem; }
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #18174B;
+  font-size: 0.875rem; }
+  @media (min-width: 768px) {
+    p {
+      font-size: 1rem; } }
+  @media (min-width: 992px) {
+    p {
+      font-size: 1.125rem; } }
 /* =============
     Buttons
 ============= */
@@ -344,15 +428,42 @@ textarea {
 /* =============
     Header
 ============= */
+h1 {
+  background-color: #18174B; }
+
+h2 {
+  background-color: #18174B; }
+
 /* =============
     Footer
 ============= */
 /* =============
     Section 1
 ============= */
+h3 {
+  background-color: #E2DEF6; }
+
 /* =============
     Section 2
 ============= */
+section {
+  background-color: #E1FFFC; }
+
+span {
+  font-weight: 600; }
+
 /* =============
     Section 3
+============= */
+/* =============
+    Section 4
+============= */
+section {
+  background-color: #fff; }
+
+/* =============
+    Section 5
+============= */
+/* =============
+    Section 6
 ============= */
