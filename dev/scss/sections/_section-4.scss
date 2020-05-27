@@ -2,8 +2,6 @@
     Section 4
 ============= */
 #section-4{
-    background-color: $white;
-
     margin-top: 40px;
 
     @include md {
@@ -13,4 +11,7 @@
     @include lg {
         margin-top: 80px;
     }
+
+    margin-left: 15px;
+    margin-right: 15px;
 }
