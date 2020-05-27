@@ -2,14 +2,6 @@
     Section 5
 ============= */
 #section-5 {
-    background-color: $turquoise;
-
-    p {
-        span {
-            font-weight: 600;
-        }
-    }
-
     margin-top: 40px;
 
     @include md {
@@ -18,5 +10,72 @@
 
     @include lg {
         margin-top: 80px;
+    }
+
+    @include xl {
+		display: grid;
+		grid-template-areas: ". section-5 .";
+		grid-template-columns: auto 1200px auto;
+	}
+
+    >div {
+        @include md {
+            display: grid;
+            grid-template-areas: "section-5-left section-5-right";
+            grid-template-columns: auto 45%;
+        }
+
+        @include lg {
+            grid-template-columns: 50% auto;
+        }
+
+        @include xl {
+			grid-area: section-5;
+		}
+
+        section {
+            background-color: $turquoise;
+            display: grid;
+            grid-template-areas: ". section-5-content .";
+            grid-template-columns: 15px auto 15px;
+            padding: 20px 0;
+            align-items: center;
+
+            @include md {
+                grid-area: section-5-left;
+                grid-template-columns: auto 85% auto;
+            }
+
+            >div {
+                grid-area: section-5-content;
+
+                p {
+                    text-align: justify;
+
+                    @include md {
+                        text-align: left;
+                    }
+                }
+
+                span {
+                    font-weight: 600;
+                }
+            }
+        }
+
+        aside {
+            background-image: url('../img/section-5/maf7.jpg');
+            background-position: center;
+            background-size: cover;
+            height: 320px;
+
+            @include md {
+                grid-area: section-5-right;
+                height: 330px;
+            }
+            @include lg {
+                height: 410px;
+            }
+        }
     }
 }
