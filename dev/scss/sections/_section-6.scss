@@ -1,18 +1,102 @@
 /* =============
     Section 6
 ============= */
-#section-6{
-    margin-top: 40px;
+#section-6 {
+    margin: 40px 0 40px;
 
     @include md {
-        margin-top: 60px;
+        margin: 60px 0 60px;
     }
 
     @include lg {
-        margin-top: 80px;
+        grid-template-columns: 40px auto 40px;
+        margin: 80px 0 80px;
     }
 
-    #section-6-container{
+    @include xl {
+        grid-template-columns: auto 1200px auto;
+    }
+
+    #gallery {
         background-color: $lilac;
+        display: grid;
+        grid-template-areas: '. section-6 .';
+        grid-template-columns: 15px auto 15px;
+
+        ul {
+            display: grid;
+            gap: 20px;
+            grid-area: section-6;
+            grid-template-areas: "g8"
+                "g10"
+                "g11";
+            grid-template-rows: repeat(3, 294px);
+            list-style: none;
+            padding-left: 0;
+
+            @include md {
+                gap: 32px;
+                grid-template-areas: "g8 g8 g9"
+                    "g10 g11 g9";
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 224px);
+            }
+
+            @include lg {
+                gap: 20px;
+                grid-template-areas: "g8 g8 g9"
+                    "g10 g11 g9"
+                    "g12 g13 g13";
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 300px);
+            }
+
+            li {
+                background-position: center;
+                background-size: cover;
+            }
+
+            #g8 {
+                background-image: url("../img/section-6/maf8.jpg");
+                grid-area: g8;
+            }
+
+            #g9 {
+                background-image: url("../img/section-6/maf9.jpg");
+                background-position: -100px;
+
+                @include md {
+                    grid-area: g9;
+                }
+            }
+
+            #g10 {
+                background-image: url("../img/section-6/maf10.jpg");
+                grid-area: g10;
+            }
+
+            #g11 {
+                background-image: url("../img/section-6/maf11.jpg");
+                grid-area: g11;
+            }
+
+            #g12 {
+                background-image: url("../img/section-6/maf12.jpg");
+                background-position: center -24px;
+
+                @include lg {
+                    grid-area: g12;
+                }
+            }
+
+            #g13 {
+                background-image: url("../img/section-6/maf13.jpg");
+                background-position: center -60px;
+
+                @include lg {
+                    grid-area: g13;
+                }
+            }
+        }
     }
 }
