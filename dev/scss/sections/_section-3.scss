@@ -2,99 +2,87 @@
     Section 3
 ============= */
 #section-3 {
+    display: grid;
+    grid-template-areas: ". section-3 .";
+    grid-template-columns: 15px auto 15px;
     margin-top: 40px;
 
     @include md {
+        grid-template-columns: 70px auto 70px;
         margin-top: 60px;
     }
 
     @include lg {
+        grid-template-columns: 40px auto 40px;
         margin-top: 80px;
     }
 
-    #section-3-container {
-        display: grid;
-        grid-template-areas: ". section-3 .";
-        grid-template-columns: 20px auto 20px;
-
-        @include md{
-            grid-template-columns: 0 auto 0;
-        }
-
-    }
-
-    #section-3-content {
+    >div {
         grid-area: section-3;
-        grid-template-rows: repeat(3, 1fr);
 
-        img {
-            width: 100%;
-        }
+        #gallery {
+            ul {
+                display: grid;
+                gap: 20px;
 
-        @include md {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            gap: 40px 32px;
-            grid-template-areas: "card1 card1 card2 card2"
-            ". card3 card3 .";
-            margin: 0 70px 0 70px;
-        }
+                p {
+                    text-align: center;
+                }
 
-        @include lg {
-            display: grid;
-            grid-template-areas: "card1 card2 card3";
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 1fr;
-            gap: 0 20px;
-            margin: 0 40px 0 40px;
-        }
+                @include md {
+                    display: grid;
+                    grid-template-areas: "g-1 g-1 g-2 g-2"
+                        ". g-3 g-3 .";
+                    grid-template-columns: repeat(4, 1fr);
+                }
 
-    }
+                @include lg {
+                    grid-template-areas: "g-1 g-2 g-3";
+                    grid-template-columns: repeat(3, 1fr);
+                }
 
-    #section-3-card1 {
-        grid-area: card1;
-        background-color: $lilac;
-        margin-bottom: 20px;
-        @include md{
-            margin-bottom: 0;
-        }
+                li {
+                    background-color: $lilac;
 
-        #card1-text{
-            padding: 20px;
-            p{
-                padding-top: 20px;
-                text-align: center;
-            }
-        }
-    }
+                    div {
+                        background-size: cover;
+                        height: 220px;
+                    }
 
-    #section-3-card2 {
-        grid-area: card2;
-        background-color: $lilac;
-        margin-bottom: 20px;
-        @include md{
-            margin-bottom: 0;
-        }
+                    section {
+                        padding: 20px;
+                    }
+                }
 
-        #card2-text{
-            padding: 20px;
-            p{
-                padding-top: 20px;
-                text-align: center;
-            }
-        }
-    }
+                #gallery-1 {
+                    @include md {
+                        grid-area: g-1;
+                    }
 
-    #section-3-card3 {
-        grid-area: card3;
-        background-color: $lilac;
+                    div {
+                        background-image: url("../img/section-3/maf3.jpg");
+                    }
+                }
 
-        #card3-text{
-            padding: 20px;
-            p{
-                padding-top: 20px;
-                text-align: center;
+                #gallery-2 {
+                    @include md {
+                        grid-area: g-2;
+                    }
+
+                    div {
+                        background-image: url("../img/section-3/maf4.png");
+                    }
+                }
+
+                #gallery-3 {
+                    @include md {
+                        grid-area: g-3;
+                    }
+
+                    div {
+                        background-image: url("../img/section-3/maf5.jpg");
+                    }
+                }
             }
         }
     }
