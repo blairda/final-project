@@ -2,7 +2,15 @@
     Section 1
 ============= */
 #section-1{
-    h3{
     background-color: $lilac;
+    padding: 10px 0;
+
+    >div{
+        margin: 0 40px;
+
+        h3 {
+        display: inline;
+        }
     }
+
 }

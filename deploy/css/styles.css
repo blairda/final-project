@@ -436,11 +436,23 @@ textarea {
 /* =============
     Header
 ============= */
-h1 {
-  background-color: #18174B; }
-
-h2 {
-  background-color: #18174B; }
+header {
+  background-color: #18174B;
+  background-image: url("../img/header/maf1.jpg");
+  background-position: top;
+  background-size: cover;
+  padding-bottom: 260px; }
+  @media (min-width: 768px) {
+    header {
+      padding-bottom: 440px; } }
+  @media (min-width: 992px) {
+    header {
+      padding-bottom: 520px; } }
+  @media (min-width: 1200px) {
+    header {
+      padding-bottom: 600px; } }
+  header > div {
+    padding: 10px 0; }
 
 /* =============
     Footer
@@ -457,8 +469,13 @@ footer {
 /* =============
     Section 1
 ============= */
-#section-1 h3 {
-  background-color: #E2DEF6; }
+#section-1 {
+  background-color: #E2DEF6;
+  padding: 10px 0; }
+  #section-1 > div {
+    margin: 0 40px; }
+    #section-1 > div h3 {
+      display: inline; }
 
 /* =============
     Section 2
@@ -542,7 +559,9 @@ footer {
     grid-area: section-3; }
     #section-3 > div #gallery ul {
       display: grid;
-      gap: 20px; }
+      gap: 20px;
+      list-style: none;
+      padding-left: 0; }
       #section-3 > div #gallery ul p {
         text-align: center; }
       @media (min-width: 768px) {
