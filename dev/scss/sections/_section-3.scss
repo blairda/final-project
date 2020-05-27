@@ -17,6 +17,10 @@
         margin-top: 80px;
     }
 
+    @include xl {
+        grid-template-columns: auto 1200px auto;
+	}
+
     >div {
         grid-area: section-3;
 
