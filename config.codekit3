@@ -19,12 +19,12 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/deploy/img/header/maf1.jpg": {
+	"/deploy/img/section-1/maf1.jpg": {
 		"ft": 16384,
-		"iS": 0,
+		"iS": 233617,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/header/maf1.jpg",
+		"oAP": "/deploy/img/section-1/maf1.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

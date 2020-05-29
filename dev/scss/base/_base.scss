@@ -1,3 +1,15 @@
 /* =============
     Base
 ============= */
+.show-for-sm{
+    @include md{
+        display: none;
+    }
+}
+
+.show-for-md{
+    display: none;
+    @include md{
+        display: contents;
+    }
+}

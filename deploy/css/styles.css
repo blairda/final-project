@@ -317,6 +317,15 @@ template {
 /* =============
     Base
 ============= */
+@media (min-width: 768px) {
+  .show-for-sm {
+    display: none; } }
+
+.show-for-md {
+  display: none; }
+  @media (min-width: 768px) {
+    .show-for-md {
+      display: contents; } }
 /* =============
     Typography
 ============= */
@@ -452,7 +461,7 @@ footer {
     Section 1
 ============= */
 #section-1 aside {
-  background-image: url("../img/header/maf1.jpg");
+  background-image: url("../img/section-1/maf1.jpg");
   background-position: top;
   background-size: cover;
   padding-bottom: 300px; }
@@ -612,6 +621,18 @@ footer {
   @media (min-width: 992px) {
     #section-4 {
       margin-top: 80px; } }
+  #section-4 aside {
+    background-image: url("../img/section-4/maf6.jpg");
+    background-position: top;
+    background-size: cover;
+    background-position: bottom;
+    height: 50vh; }
+    @media (min-width: 768px) {
+      #section-4 aside {
+        height: 65vh; } }
+    @media (min-width: 992px) {
+      #section-4 aside {
+        height: 80vh; } }
 /* =============
     Section 5
 ============= */
