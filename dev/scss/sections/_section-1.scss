@@ -2,15 +2,44 @@
     Section 1
 ============= */
 #section-1{
-    background-color: $lilac;
-    padding: 10px 0;
 
-    >div{
-        margin: 0 40px;
-
-        h3 {
-        display: inline;
+    aside{
+        background-image: url("../img/header/maf1.jpg");
+        background-position: top;
+        background-size: cover;
+        padding-bottom: 300px;
+    
+        @include md {
+            padding-bottom: 440px;
+        }
+    
+        @include lg {
+            padding-bottom: 520px;
+        }
+    
+        @include xl {
+            padding-bottom: 600px;
         }
     }
 
+    #title{
+        background-color: $violet;
+        padding: 10px 0;
+    }
+
+    #navigation{
+            background-color: $lilac;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+
+            h3 {
+                @include md{
+                    padding: 0 40px;
+                }
+                @include lg{
+                    padding: 0 45px;
+                }
+            }
+    }
 }

@@ -436,24 +436,6 @@ textarea {
 /* =============
     Header
 ============= */
-header {
-  background-color: #18174B;
-  background-image: url("../img/header/maf1.jpg");
-  background-position: top;
-  background-size: cover;
-  padding-bottom: 260px; }
-  @media (min-width: 768px) {
-    header {
-      padding-bottom: 440px; } }
-  @media (min-width: 992px) {
-    header {
-      padding-bottom: 520px; } }
-  @media (min-width: 1200px) {
-    header {
-      padding-bottom: 600px; } }
-  header > div {
-    padding: 10px 0; }
-
 /* =============
     Footer
 ============= */
@@ -469,14 +451,35 @@ footer {
 /* =============
     Section 1
 ============= */
-#section-1 {
-  background-color: #E2DEF6;
+#section-1 aside {
+  background-image: url("../img/header/maf1.jpg");
+  background-position: top;
+  background-size: cover;
+  padding-bottom: 300px; }
+  @media (min-width: 768px) {
+    #section-1 aside {
+      padding-bottom: 440px; } }
+  @media (min-width: 992px) {
+    #section-1 aside {
+      padding-bottom: 520px; } }
+  @media (min-width: 1200px) {
+    #section-1 aside {
+      padding-bottom: 600px; } }
+#section-1 #title {
+  background-color: #18174B;
   padding: 10px 0; }
-  #section-1 > div {
-    margin: 0 40px; }
-    #section-1 > div h3 {
-      display: inline; }
 
+#section-1 #navigation {
+  background-color: #E2DEF6;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center; }
+  @media (min-width: 768px) {
+    #section-1 #navigation h3 {
+      padding: 0 40px; } }
+  @media (min-width: 992px) {
+    #section-1 #navigation h3 {
+      padding: 0 45px; } }
 /* =============
     Section 2
 ============= */

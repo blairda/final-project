@@ -1,34 +1,26 @@
 /* =============
     Header
 ============= */
-header {
-    background-color: $violet;
-    background-image: url("../img/header/maf1.jpg");
-    background-position: top;
-    background-size: cover;
-    padding-bottom: 260px;
-    // padding: 80px 0 150px;
+// header {
+//     background-color: $violet;
+//     background-image: url("../img/header/maf1.jpg");
+//     background-position: top;
+//     background-size: cover;
+//     padding-bottom: 260px;
 
-    @include md {
-        // padding: 220px 0 100px;
-        padding-bottom: 440px;
-    }
+//     @include md {
+//         padding-bottom: 440px;
+//     }
 
-    @include lg {
-        // padding: 280px 0 180px;
-        padding-bottom: 520px;
-    }
+//     @include lg {
+//         padding-bottom: 520px;
+//     }
 
-    @include xl {
-        // padding: 320px 0 240px;
-        padding-bottom: 600px;
-    }
+//     @include xl {
+//         padding-bottom: 600px;
+//     }
 
-    >div {
-        padding: 10px 0;
-        
-        // @include md {
-        //     grid-area: header;
-        // }
-    }
-}
+//     // >div {
+//     //     padding: 10px 0;
+//     // }
+// }
