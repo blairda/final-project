@@ -4,7 +4,7 @@
 #section-6 {
     margin: 40px 0 40px;
 
-    h3{
+    h3 {
         padding: 20px;
     }
 
@@ -66,8 +66,8 @@
             }
 
             #g9 {
-                background-image: url("../img/section-6/maf9.jpg");
                 // background-position: -100px;
+                background-image: url("../img/section-6/maf9.jpg");
 
                 @include md {
                     grid-area: g9;
@@ -97,9 +97,8 @@
                 background-image: url("../img/section-6/maf13.jpg");
 
                 @include lg {
-                    grid-area: g13;
                     background-position: center -60px;
-
+                    grid-area: g13;
                 }
             }
         }

@@ -639,9 +639,7 @@ footer > div {
     Section 4
 ============= */
 #section-4 {
-  margin-top: 40px;
-  margin-left: 15px;
-  margin-right: 15px; }
+  margin-top: 40px; }
   @media (min-width: 768px) {
     #section-4 {
       margin-top: 60px; } }
@@ -650,9 +648,8 @@ footer > div {
       margin-top: 80px; } }
   #section-4 aside {
     background-image: url("../img/section-4/maf6.jpg");
-    background-position: top;
-    background-size: cover;
     background-position: bottom;
+    background-size: cover;
     height: 50vh; }
     @media (min-width: 768px) {
       #section-4 aside {
@@ -791,5 +788,5 @@ footer > div {
         background-image: url("../img/section-6/maf13.jpg"); }
         @media (min-width: 992px) {
           #section-6 #gallery ul #g13 {
-            grid-area: g13;
-            background-position: center -60px; } }
+            background-position: center -60px;
+            grid-area: g13; } }

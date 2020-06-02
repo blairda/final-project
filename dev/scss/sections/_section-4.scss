@@ -1,7 +1,7 @@
 /* =============
     Section 4
 ============= */
-#section-4{
+#section-4 {
     margin-top: 40px;
 
     @include md {
@@ -12,28 +12,24 @@
         margin-top: 80px;
     }
 
-    margin-left: 15px;
-    margin-right: 15px;
-
-    aside{
+    aside {
         background-image: url("../img/section-4/maf6.jpg");
-        background-position: top;
-        background-size: cover;
         background-position: bottom;
+        background-size: cover;
         height: 50vh;
 
-        @include md{
+        @include md {
             height: 65vh;
         }
 
-        @include lg{
+        @include lg {
             height: 80vh;
         }
     }
 
-    h5{
-        @include md{
-        margin: -80px 20px 0 0;
+    h5 {
+        @include md {
+            margin: -80px 20px 0 0;
         }
     }
 }
