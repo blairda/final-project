@@ -326,6 +326,9 @@ template {
   @media (min-width: 768px) {
     .show-for-md {
       display: contents; } }
+a {
+  text-decoration: none; }
+
 /* =============
     Typography
 ============= */
@@ -386,7 +389,7 @@ h5 {
   color: #18174B;
   font-size: 1.125rem;
   line-height: 1.875rem;
-  text-align: justify; }
+  text-align: center; }
   @media (min-width: 768px) {
     h5 {
       font-size: 1.25rem;
@@ -403,10 +406,11 @@ h6 {
   line-height: 1.125rem; }
   @media (min-width: 768px) {
     h6 {
-      font-size: 0.75rem; } }
+      font-size: 0.875rem; } }
   @media (min-width: 992px) {
     h6 {
-      line-height: 1.25rem; } }
+      font-size: 1rem;
+      line-height: 1.5rem; } }
 p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -448,15 +452,38 @@ textarea {
 /* =============
     Footer
 ============= */
-footer {
-  background-color: #18174B; }
-  footer p {
-    color: #E1FFFC;
-    line-height: 1rem;
-    font-size: 0.6875rem; }
+footer p {
+  color: #E1FFFC;
+  font-size: 0.6875rem;
+  line-height: 1rem; }
+  @media (min-width: 768px) {
+    footer p {
+      font-size: 0.75rem; } }
+  @media (min-width: 992px) {
+    footer p {
+      line-height: 1.25rem; } }
+footer a {
+  color: #E1FFFC; }
+
+footer > section {
+  background-color: #E1FFFC;
+  padding: 15px 0 15px 15px; }
+  @media (min-width: 768px) {
+    footer > section {
+      padding: 15px 0 15px 115px; } }
+  footer > section ul {
+    font-size: 1.25rem;
+    list-style: none;
+    padding: 0; }
     @media (min-width: 768px) {
-      footer p {
-        font-size: 0.75rem; } }
+      footer > section ul {
+        font-size: 1.375rem; } }
+footer > div {
+  background-color: #18174B;
+  padding: 20px 0 20px 15px; }
+  @media (min-width: 768px) {
+    footer > div {
+      padding: 20px 0 20px 115px; } }
 /* =============
     Section 1
 ============= */
@@ -633,6 +660,9 @@ footer {
     @media (min-width: 992px) {
       #section-4 aside {
         height: 80vh; } }
+  @media (min-width: 768px) {
+    #section-4 h5 {
+      margin: -80px 20px 0 0; } }
 /* =============
     Section 5
 ============= */
@@ -697,6 +727,8 @@ footer {
 ============= */
 #section-6 {
   margin: 40px 0 40px; }
+  #section-6 h3 {
+    padding: 20px; }
   @media (min-width: 768px) {
     #section-6 {
       margin: 60px 0 60px; } }
@@ -739,8 +771,7 @@ footer {
         background-image: url("../img/section-6/maf8.jpg");
         grid-area: g8; }
       #section-6 #gallery ul #g9 {
-        background-image: url("../img/section-6/maf9.jpg");
-        background-position: -100px; }
+        background-image: url("../img/section-6/maf9.jpg"); }
         @media (min-width: 768px) {
           #section-6 #gallery ul #g9 {
             grid-area: g9; } }
@@ -757,8 +788,8 @@ footer {
           #section-6 #gallery ul #g12 {
             grid-area: g12; } }
       #section-6 #gallery ul #g13 {
-        background-image: url("../img/section-6/maf13.jpg");
-        background-position: center -60px; }
+        background-image: url("../img/section-6/maf13.jpg"); }
         @media (min-width: 992px) {
           #section-6 #gallery ul #g13 {
-            grid-area: g13; } }
+            grid-area: g13;
+            background-position: center -60px; } }
