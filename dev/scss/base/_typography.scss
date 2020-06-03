@@ -78,6 +78,7 @@ h5{
     }
     @include lg{
         font-size: rem-calc(24);
+        line-height: rem-calc(34);
     }
 }
 

@@ -36,10 +36,11 @@
                 "g11";
             grid-template-rows: repeat(3, 294px);
             list-style: none;
-            padding-left: 0;
+            padding: 20px 0 0 0;
 
             @include md {
                 gap: 32px;
+                padding: 32px 0 0 0;
                 grid-template-areas: "g8 g8 g9"
                     "g10 g11 g9";
                 grid-template-columns: repeat(3, 1fr);
@@ -48,6 +49,7 @@
 
             @include lg {
                 gap: 20px;
+                padding: 20px 0;
                 grid-template-areas: "g8 g8 g9"
                     "g10 g11 g9"
                     "g12 g13 g13";

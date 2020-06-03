@@ -29,7 +29,12 @@
 
     h5 {
         @include md {
-            margin: -80px 20px 0 0;
+            margin: -200px 20px 0 0;
+            padding-left: 70%;
+        }
+
+        @include lg {
+            margin-top: -220px;
         }
     }
 }

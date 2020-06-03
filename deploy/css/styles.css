@@ -400,7 +400,8 @@ h5 {
       text-align: right; } }
   @media (min-width: 992px) {
     h5 {
-      font-size: 1.5rem; } }
+      font-size: 1.5rem;
+      line-height: 2.125rem; } }
 h6 {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
@@ -568,10 +569,15 @@ footer > div {
     #section-2 > div section > div {
       grid-area: section-2-content; }
       #section-2 > div section > div p {
-        text-align: justify; }
+        text-align: justify;
+        margin-top: 10px; }
         @media (min-width: 768px) {
           #section-2 > div section > div p {
-            text-align: left; } }
+            text-align: left;
+            margin-right: 10px; } }
+        @media (min-width: 992px) {
+          #section-2 > div section > div p {
+            margin-right: 20px; } }
       #section-2 > div section > div span {
         font-weight: 600; }
   #section-2 > div aside {
@@ -613,7 +619,8 @@ footer > div {
       list-style: none;
       padding-left: 0; }
       #section-3 > div #gallery ul p {
-        text-align: center; }
+        text-align: center;
+        margin-top: 10px; }
       @media (min-width: 768px) {
         #section-3 > div #gallery ul {
           display: grid;
@@ -670,7 +677,11 @@ footer > div {
         height: 80vh; } }
   @media (min-width: 768px) {
     #section-4 h5 {
-      margin: -80px 20px 0 0; } }
+      margin: -200px 20px 0 0;
+      padding-left: 70%; } }
+  @media (min-width: 992px) {
+    #section-4 h5 {
+      margin-top: -220px; } }
 /* =============
     Section 5
 ============= */
@@ -678,10 +689,10 @@ footer > div {
   margin-top: 40px; }
   @media (min-width: 768px) {
     #section-5 {
-      margin-top: 60px; } }
+      margin-top: 90px; } }
   @media (min-width: 992px) {
     #section-5 {
-      margin-top: 80px; } }
+      margin-top: 110px; } }
   @media (min-width: 1200px) {
     #section-5 {
       display: grid;
@@ -712,7 +723,8 @@ footer > div {
     #section-5 > div section > div {
       grid-area: section-5-content; }
       #section-5 > div section > div p {
-        text-align: justify; }
+        text-align: justify;
+        margin-top: 10px; }
         @media (min-width: 768px) {
           #section-5 > div section > div p {
             text-align: left; } }
@@ -759,16 +771,18 @@ footer > div {
       grid-template-areas: "g8" "g10" "g11";
       grid-template-rows: repeat(3, 294px);
       list-style: none;
-      padding-left: 0; }
+      padding: 20px 0 0 0; }
       @media (min-width: 768px) {
         #section-6 #gallery ul {
           gap: 32px;
+          padding: 32px 0 0 0;
           grid-template-areas: "g8 g8 g9" "g10 g11 g9";
           grid-template-columns: repeat(3, 1fr);
           grid-template-rows: repeat(2, 224px); } }
       @media (min-width: 992px) {
         #section-6 #gallery ul {
           gap: 20px;
+          padding: 20px 0;
           grid-template-areas: "g8 g8 g9" "g10 g11 g9" "g12 g13 g13";
           grid-template-columns: repeat(3, 1fr);
           grid-template-rows: repeat(3, 300px); } }
