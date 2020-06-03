@@ -24,7 +24,7 @@
     >div {
         grid-area: section-3;
 
-        #gallery {
+        #cards {
             ul {
                 display: grid;
                 gap: 20px;
@@ -61,7 +61,7 @@
                     }
                 }
 
-                #gallery-1 {
+                #card-1 {
                     @include md {
                         grid-area: g-1;
                     }
@@ -71,7 +71,7 @@
                     }
                 }
 
-                #gallery-2 {
+                #card-2 {
                     @include md {
                         grid-area: g-2;
                     }
@@ -81,7 +81,7 @@
                     }
                 }
 
-                #gallery-3 {
+                #card-3 {
                     @include md {
                         grid-area: g-3;
                     }
