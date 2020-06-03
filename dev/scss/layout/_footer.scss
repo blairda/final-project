@@ -29,12 +29,22 @@ footer {
         }
 
         ul {
-            font-size: rem-calc(20);
+            display: flex;
+            font-size: rem-calc(22);
+            justify-content: flex-start;
             list-style: none;
             padding: 0;
 
             @include md {
-                font-size: rem-calc(22);
+                font-size: rem-calc(24);
+            }
+
+            @include lg {
+                font-size: rem-calc(26);
+            }
+
+            li {
+                padding-right: 20px;
             }
         }
     }

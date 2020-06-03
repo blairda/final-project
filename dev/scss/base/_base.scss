@@ -10,10 +10,14 @@
 .show-for-md{
     display: none;
     @include md{
-        display: contents;
+        display: block;
     }
 }
 
 a{
     text-decoration: none;
+}
+
+ul{
+    margin: 0;
 }

@@ -325,9 +325,12 @@ template {
   display: none; }
   @media (min-width: 768px) {
     .show-for-md {
-      display: contents; } }
+      display: block; } }
 a {
   text-decoration: none; }
+
+ul {
+  margin: 0; }
 
 /* =============
     Typography
@@ -472,12 +475,20 @@ footer > section {
     footer > section {
       padding: 15px 0 15px 115px; } }
   footer > section ul {
-    font-size: 1.25rem;
+    display: flex;
+    font-size: 1.375rem;
+    justify-content: flex-start;
     list-style: none;
     padding: 0; }
     @media (min-width: 768px) {
       footer > section ul {
-        font-size: 1.375rem; } }
+        font-size: 1.5rem; } }
+    @media (min-width: 992px) {
+      footer > section ul {
+        font-size: 1.625rem; } }
+    footer > section ul li {
+      padding-right: 20px; }
+
 footer > div {
   background-color: #18174B;
   padding: 20px 0 20px 15px; }
