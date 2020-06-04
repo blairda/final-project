@@ -519,35 +519,68 @@ footer > div {
 /* =============
     Section 1
 ============= */
-#section-1 aside {
-  background-image: url("../img/section-1/maf1.jpg");
-  background-position: top;
-  background-size: cover;
-  padding-bottom: 300px; }
+#section-1 {
+  background-color: #E2DEF6; }
+  #section-1 aside {
+    background-image: url("../img/section-1/maf1.jpg");
+    background-position: top;
+    background-size: cover;
+    padding-bottom: 300px; }
+    @media (min-width: 768px) {
+      #section-1 aside {
+        padding-bottom: 440px; } }
+    @media (min-width: 992px) {
+      #section-1 aside {
+        padding-bottom: 520px; } }
+    @media (min-width: 1200px) {
+      #section-1 aside {
+        padding-bottom: 600px; } }
+  #section-1 #title {
+    background-color: #18174B;
+    padding: 10px 0; }
   @media (min-width: 768px) {
-    #section-1 aside {
-      padding-bottom: 440px; } }
-  @media (min-width: 992px) {
-    #section-1 aside {
-      padding-bottom: 520px; } }
-  @media (min-width: 1200px) {
-    #section-1 aside {
-      padding-bottom: 600px; } }
-#section-1 #title {
-  background-color: #18174B;
-  padding: 10px 0; }
+    #section-1 #navigation {
+      position: sticky; } }
+  #section-1 #navigation #burger-container {
+    color: #18174B;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px; }
+    @media (min-width: 768px) {
+      #section-1 #navigation #burger-container {
+        display: none !important; } }
+    #section-1 #navigation #burger-container i {
+      cursor: pointer; }
+  #section-1 #navigation #nav-container {
+    background-color: #E2DEF6;
+    display: none;
+    padding: 0 15px 15px 15px;
+    display: flex; }
+    @media (min-width: 768px) {
+      #section-1 #navigation #nav-container {
+        display: block !important; } }
+    @media (min-width: 768px) {
+      #section-1 #navigation #nav-container {
+        padding: 15px; } }
+    #section-1 #navigation #nav-container ul {
+      list-style: none;
+      padding: 0;
+      justify-content: center; }
+      #section-1 #navigation #nav-container ul li {
+        margin: 0;
+        padding: 5px 0; }
+        @media (min-width: 768px) {
+          #section-1 #navigation #nav-container ul li {
+            padding: 0 40px; } }
+        @media (min-width: 992px) {
+          #section-1 #navigation #nav-container ul li {
+            padding: 0 40px; } }
+        @media (min-width: 1200px) {
+          #section-1 #navigation #nav-container ul li {
+            padding: 0% 5%; } }
+        #section-1 #navigation #nav-container ul li h3 {
+          text-align: left; }
 
-#section-1 #navigation {
-  background-color: #E2DEF6;
-  padding: 10px 0;
-  display: flex;
-  justify-content: center; }
-  @media (min-width: 768px) {
-    #section-1 #navigation h3 {
-      padding: 0 40px; } }
-  @media (min-width: 992px) {
-    #section-1 #navigation h3 {
-      padding: 0 45px; } }
 /* =============
     Section 2
 ============= */
