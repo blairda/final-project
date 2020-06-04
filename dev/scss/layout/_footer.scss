@@ -45,6 +45,19 @@ footer {
 
             li {
                 padding-right: 20px;
+                color: $violet;
+
+                a:link,
+                a:visited {
+                    color: $violet;
+                    text-decoration: none;
+                    transition: 0.25s;
+                }
+
+                a:hover,
+                a:active {
+                    color: $teal;
+            }
             }
         }
     }

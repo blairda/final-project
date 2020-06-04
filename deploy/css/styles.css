@@ -367,7 +367,7 @@ h3 {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
   color: #18174B;
-  font-size: 1.125rem; }
+  font-size: 1rem; }
   @media (min-width: 768px) {
     h3 {
       font-size: 1.25rem; } }
@@ -453,25 +453,17 @@ textarea {
 #nav-container ul {
   height: 100%;
   text-align: right; }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     #nav-container ul {
-      display: flex;
-      justify-content: flex-end; } }
-  #nav-container ul li {
-    margin-bottom: 20px; }
-    @media (min-width: 992px) {
-      #nav-container ul li {
-        align-items: center;
-        display: flex;
-        margin: 0px 30px 0 0; } }
-    #nav-container ul li a:link,
-    #nav-container ul li a:visited {
-      color: #000;
-      text-decoration: none;
-      transition: 0.25s; }
-    #nav-container ul li a:hover,
-    #nav-container ul li a:active {
-      color: #000; }
+      display: flex; } }
+  #nav-container ul li a:link,
+  #nav-container ul li a:visited {
+    color: #18174B;
+    text-decoration: none;
+    transition: 0.25s; }
+  #nav-container ul li a:hover,
+  #nav-container ul li a:active {
+    color: #03AA9A; }
 
 /* =============
     Footer
@@ -508,7 +500,16 @@ footer > section {
       footer > section ul {
         font-size: 1.625rem; } }
     footer > section ul li {
-      padding-right: 20px; }
+      padding-right: 20px;
+      color: #18174B; }
+      footer > section ul li a:link,
+      footer > section ul li a:visited {
+        color: #18174B;
+        text-decoration: none;
+        transition: 0.25s; }
+      footer > section ul li a:hover,
+      footer > section ul li a:active {
+        color: #03AA9A; }
 
 footer > div {
   background-color: #18174B;
@@ -571,7 +572,7 @@ footer > div {
         padding: 5px 0; }
         @media (min-width: 768px) {
           #section-1 #navigation #nav-container ul li {
-            padding: 0 40px; } }
+            padding: 0 30px; } }
         @media (min-width: 992px) {
           #section-1 #navigation #nav-container ul li {
             padding: 0 40px; } }
@@ -836,25 +837,28 @@ footer > div {
       @media (min-width: 768px) {
         #section-6 #gallery ul {
           gap: 32px;
-          padding: 32px 0 0 0;
           grid-template-areas: "g8 g8 g9" "g10 g11 g9";
           grid-template-columns: repeat(3, 1fr);
-          grid-template-rows: repeat(2, 224px); } }
+          grid-template-rows: repeat(2, 224px);
+          padding: 32px 0 0 0; } }
       @media (min-width: 992px) {
         #section-6 #gallery ul {
           gap: 20px;
-          padding: 20px 0;
           grid-template-areas: "g8 g8 g9" "g10 g11 g9" "g12 g13 g13";
           grid-template-columns: repeat(3, 1fr);
-          grid-template-rows: repeat(3, 300px); } }
+          grid-template-rows: repeat(3, 300px);
+          padding: 20px 0; } }
       #section-6 #gallery ul li {
         background-position: center;
         background-size: cover; }
       #section-6 #gallery ul #g8 {
         background-image: url("../img/section-6/maf8.jpg");
+        background-position: center;
         grid-area: g8; }
       #section-6 #gallery ul #g9 {
-        background-image: url("../img/section-6/maf9.jpg"); }
+        background-image: url("../img/section-6/maf9.jpg");
+        background-position: -100px;
+        background-repeat: no-repeat; }
         @media (min-width: 768px) {
           #section-6 #gallery ul #g9 {
             grid-area: g9; } }

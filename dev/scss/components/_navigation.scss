@@ -6,30 +6,21 @@
         height: 100%;
         text-align: right;
 
-        @include lg {
+        @include md {
             display: flex;
-            justify-content: flex-end;
         }
 
         li {
-            margin-bottom: 20px;
-
-            @include lg {
-                align-items: center;
-                display: flex;
-                margin: 0px 30px 0 0;
-            }
-
             a:link,
             a:visited {
-                color: $black;
+                color: $violet;
                 text-decoration: none;
                 transition: 0.25s;
             }
 
             a:hover,
             a:active {
-                color: $black;
+                color: $teal;
             }
         }
     }

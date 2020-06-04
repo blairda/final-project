@@ -73,7 +73,7 @@
                     padding: 5px 0;
 
                     @include md {
-                        padding: 0 40px;
+                        padding: 0 30px;
                     }
 
                     @include lg {
@@ -86,7 +86,20 @@
 
                     h3 {
                         text-align: left;
+                        // color: $violet;
                     }
+
+                    // a:link,
+                    // a:visited {
+                    //     color: $violet;
+                    //     text-decoration: none;
+                    //     transition: 0.25s;
+                    // }
+        
+                    // a:hover,
+                    // a:active {
+                    //     color: $teal;
+                    // }
                 }
             }
 
