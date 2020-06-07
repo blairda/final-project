@@ -29,10 +29,9 @@
     }
 
     #navigation {
-        @include md {
             position: sticky;
-        }
-
+            top: 0;
+        
         #burger-container {
             color: $violet;
             display: flex;

@@ -539,48 +539,48 @@ footer > div {
   #section-1 #title {
     background-color: #18174B;
     padding: 10px 0; }
-  @media (min-width: 768px) {
-    #section-1 #navigation {
-      position: sticky; } }
-  #section-1 #navigation #burger-container {
-    color: #18174B;
-    display: flex;
-    justify-content: flex-start;
-    padding: 15px; }
-    @media (min-width: 768px) {
-      #section-1 #navigation #burger-container {
-        display: none !important; } }
-    #section-1 #navigation #burger-container i {
-      cursor: pointer; }
-  #section-1 #navigation #nav-container {
-    background-color: #E2DEF6;
-    display: none;
-    padding: 0 15px 15px 15px;
-    display: flex; }
-    @media (min-width: 768px) {
-      #section-1 #navigation #nav-container {
-        display: block !important; } }
-    @media (min-width: 768px) {
-      #section-1 #navigation #nav-container {
-        padding: 15px; } }
-    #section-1 #navigation #nav-container ul {
-      list-style: none;
-      padding: 0;
-      justify-content: center; }
-      #section-1 #navigation #nav-container ul li {
-        margin: 0;
-        padding: 5px 0; }
-        @media (min-width: 768px) {
-          #section-1 #navigation #nav-container ul li {
-            padding: 0 30px; } }
-        @media (min-width: 992px) {
-          #section-1 #navigation #nav-container ul li {
-            padding: 0 40px; } }
-        @media (min-width: 1200px) {
-          #section-1 #navigation #nav-container ul li {
-            padding: 0% 5%; } }
-        #section-1 #navigation #nav-container ul li h3 {
-          text-align: left; }
+  #section-1 #navigation {
+    position: sticky;
+    top: 0; }
+    #section-1 #navigation #burger-container {
+      color: #18174B;
+      display: flex;
+      justify-content: flex-start;
+      padding: 15px; }
+      @media (min-width: 768px) {
+        #section-1 #navigation #burger-container {
+          display: none !important; } }
+      #section-1 #navigation #burger-container i {
+        cursor: pointer; }
+    #section-1 #navigation #nav-container {
+      background-color: #E2DEF6;
+      display: none;
+      padding: 0 15px 15px 15px;
+      display: flex; }
+      @media (min-width: 768px) {
+        #section-1 #navigation #nav-container {
+          display: block !important; } }
+      @media (min-width: 768px) {
+        #section-1 #navigation #nav-container {
+          padding: 15px; } }
+      #section-1 #navigation #nav-container ul {
+        list-style: none;
+        padding: 0;
+        justify-content: center; }
+        #section-1 #navigation #nav-container ul li {
+          margin: 0;
+          padding: 5px 0; }
+          @media (min-width: 768px) {
+            #section-1 #navigation #nav-container ul li {
+              padding: 0 30px; } }
+          @media (min-width: 992px) {
+            #section-1 #navigation #nav-container ul li {
+              padding: 0 40px; } }
+          @media (min-width: 1200px) {
+            #section-1 #navigation #nav-container ul li {
+              padding: 0% 5%; } }
+          #section-1 #navigation #nav-container ul li h3 {
+            text-align: left; }
 
 /* =============
     Section 2
@@ -808,16 +808,16 @@ footer > div {
     Section 6
 ============= */
 #section-6 {
-  margin: 40px 0 40px; }
+  margin: 40px 0 10px 0; }
   #section-6 h3 {
     padding: 20px; }
   @media (min-width: 768px) {
     #section-6 {
-      margin: 60px 0 60px; } }
+      margin: 60px 0 10px 0; } }
   @media (min-width: 992px) {
     #section-6 {
       grid-template-columns: 40px auto 40px;
-      margin: 80px 0 80px; } }
+      margin: 80px 0 10px 0; } }
   @media (min-width: 1200px) {
     #section-6 {
       grid-template-columns: auto 1200px auto; } }
@@ -880,3 +880,28 @@ footer > div {
           #section-6 #gallery ul #g13 {
             background-position: center -60px;
             grid-area: g13; } }
+/* =============
+    Section 7
+============= */
+#section-7 {
+  background-color: #fff;
+  display: grid;
+  grid-template-areas: ". video .";
+  grid-template-columns: auto 95% auto;
+  height: 50vh; }
+  @media (min-width: 768px) {
+    #section-7 {
+      grid-template-columns: auto 95% auto;
+      height: 40vh; } }
+  @media (min-width: 992px) {
+    #section-7 {
+      height: 50vh; } }
+  #section-7 > div {
+    align-items: center;
+    display: flex;
+    grid-area: video;
+    justify-content: center; }
+    #section-7 > div section {
+      display: flex;
+      justify-content: center;
+      width: 100%; }

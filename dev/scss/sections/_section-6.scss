@@ -2,19 +2,19 @@
     Section 6
 ============= */
 #section-6 {
-    margin: 40px 0 40px;
+    margin: 40px 0 10px 0;
 
     h3 {
         padding: 20px;
     }
 
     @include md {
-        margin: 60px 0 60px;
+        margin: 60px 0 10px 0;
     }
 
     @include lg {
         grid-template-columns: 40px auto 40px;
-        margin: 80px 0 80px;
+        margin: 80px 0 10px 0;
     }
 
     @include xl {
