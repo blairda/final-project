@@ -465,6 +465,71 @@ textarea {
   #nav-container ul li a:active {
     color: #03AA9A; }
 
+header {
+  position: -webkit-sticky;
+  position: sticky !important;
+  top: 0;
+  left: 0;
+  background-color: #E2DEF6; }
+  header #burger-container {
+    color: #18174B;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px; }
+    @media (min-width: 768px) {
+      header #burger-container {
+        display: none !important; } }
+    header #burger-container i {
+      cursor: pointer; }
+  header #nav-container {
+    background-color: #E2DEF6;
+    display: none;
+    padding: 0 15px 15px 15px;
+    display: flex; }
+    @media (min-width: 768px) {
+      header #nav-container {
+        display: block !important; } }
+    @media (min-width: 768px) {
+      header #nav-container {
+        padding: 15px; } }
+    header #nav-container ul {
+      list-style: none;
+      padding: 0;
+      justify-content: center; }
+      header #nav-container ul li {
+        margin: 0;
+        padding: 5px 0;
+        text-align: left; }
+        @media (min-width: 768px) {
+          header #nav-container ul li {
+            padding: 0 30px; } }
+        @media (min-width: 992px) {
+          header #nav-container ul li {
+            padding: 0 40px; } }
+        @media (min-width: 1200px) {
+          header #nav-container ul li {
+            padding: 0% 5%; } }
+        header #nav-container ul li a:link,
+        header #nav-container ul li a:visited {
+          color: #18174B;
+          text-decoration: none;
+          transition: 0.25s;
+          font-family: 'Rubik', sans-serif;
+          font-weight: 700;
+          color: #18174B;
+          font-size: 1rem; }
+          @media (min-width: 768px) {
+            header #nav-container ul li a:link,
+            header #nav-container ul li a:visited {
+              font-size: 1.25rem; } }
+          @media (min-width: 992px) {
+            header #nav-container ul li a:link,
+            header #nav-container ul li a:visited {
+              font-size: 1.5rem; } }
+        header #nav-container ul li a:hover,
+        header #nav-container ul li a:active {
+          color: #03AA9A; }
+
 /* =============
     Footer
 ============= */
@@ -539,57 +604,6 @@ footer > div {
   #section-1 #title {
     background-color: #18174B;
     padding: 10px 0; }
-  #section-1 #navigation {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0; }
-    #section-1 #navigation #burger-container {
-      color: #18174B;
-      display: flex;
-      justify-content: flex-start;
-      padding: 15px; }
-      @media (min-width: 768px) {
-        #section-1 #navigation #burger-container {
-          display: none !important; } }
-      #section-1 #navigation #burger-container i {
-        cursor: pointer; }
-    #section-1 #navigation #nav-container {
-      background-color: #E2DEF6;
-      display: none;
-      padding: 0 15px 15px 15px;
-      display: flex; }
-      @media (min-width: 768px) {
-        #section-1 #navigation #nav-container {
-          display: block !important; } }
-      @media (min-width: 768px) {
-        #section-1 #navigation #nav-container {
-          padding: 15px; } }
-      #section-1 #navigation #nav-container ul {
-        list-style: none;
-        padding: 0;
-        justify-content: center; }
-        #section-1 #navigation #nav-container ul li {
-          margin: 0;
-          padding: 5px 0; }
-          @media (min-width: 768px) {
-            #section-1 #navigation #nav-container ul li {
-              padding: 0 30px; } }
-          @media (min-width: 992px) {
-            #section-1 #navigation #nav-container ul li {
-              padding: 0 40px; } }
-          @media (min-width: 1200px) {
-            #section-1 #navigation #nav-container ul li {
-              padding: 0% 5%; } }
-          #section-1 #navigation #nav-container ul li h3 {
-            text-align: left; }
-          #section-1 #navigation #nav-container ul li a:link,
-          #section-1 #navigation #nav-container ul li a:visited {
-            color: #18174B;
-            text-decoration: none;
-            transition: 0.25s; }
-          #section-1 #navigation #nav-container ul li a:hover,
-          #section-1 #navigation #nav-container ul li a:active {
-            color: #03AA9A; }
 
 /* =============
     Section 2
